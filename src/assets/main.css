@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Acme', arial,
+    sans-serif;
+  background: radial-gradient(#3498db, #341f97);
+  height: 100vh;
+}
+
+h1 {
+  color: #efefef;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: calc(100% - 20px);
+  display: grid;
+  place-items: center;
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  width: 100%;
+  max-width: 510px;
+}
+
+.pokemon-list article {
+  height: 150px;
+  background: rgba(250, 250, 250, 0.3);
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  margin: 0;
+}
+
+#scroll-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  color: rgba(250, 250, 250, 0.8);
+}
+
+button {
+  border: 0;
+}
+
+form {
+  margin: 10px auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  padding: 0 10px;
+  float: left;
+}
+
+form button {
+  height: 32px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  font-size: 1rem;
+  float: right;
+}
+
+h3 {
+  text-transform: capitalize;
+}
